@@ -1,0 +1,78 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.conteiner {
+  position: relative;
+  overflow: hidden;
+  width: 401px;
+  height: 400px;
+  background-color: rgb(217, 217, 217);
+}
+.circleSmall {
+  position: absolute;
+  z-index: 2;
+  width: 100px;
+  height: 100px;
+  right: 76px;
+  top: 136px;
+  border-radius: 50%;
+  background: rgb(12, 165, 101);
+}
+.circleBig {
+  position: absolute;
+  z-index: 0;
+  width: 320px;
+  height: 320px;
+  left: -94px;
+  top: -107px;
+  border-radius: 56%;
+  background: rgb(36, 132, 86);
+}
+.triangle {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 108px solid transparent;
+  border-left: 100px solid transparent;
+  border-right: 100px solid rgb(206, 54, 7);
+}
+.rectangle {
+  position: absolute;
+  z-index: 1;
+  width: 307px;
+  height: 47px;
+  left: 45px;
+  top: 152px;
+  transform: rotate(47deg);
+  background: rgb(28, 63, 155);
+}
+.rectangleBorder {
+  position: absolute;
+  z-index: 1;
+  width: 304px;
+  height: 81px;
+  left: 50px;
+  top: 272px;
+  border-radius: 31px;
+  background: rgb(146, 15, 191);
+}
